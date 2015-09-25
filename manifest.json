@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Chrome-Cortana",
+	"description": "Redirects Cortana Bing searches to a different search engine",
+	"version": "1.0.0",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": [
+          "webRequest",
+		  "webRequestBlocking",
+		  "storage",
+          "*://*.bing.com/search*form=WNSGPH*",
+		  "*://*.bing.com/search*form=WNSBOX*",
+		  "*://*.bing.com/search*form=WNSFC2*"
+	]
+}

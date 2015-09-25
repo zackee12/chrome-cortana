@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div.row {white-space: nowrap;}
+		</style>
+	</head>	
+	<body>
+		<form action="">
+			<div class="row">
+				<strong>Choose Cortana Search Engine</strong>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="aol" value="http://search.aol.com/aol/search?q=%s"/><label for="aol">AOL</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="ask" value="http://www.ask.com/web?q=%s"/><label for="ask">Ask</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="bing" value="http://www.bing.com/search?q=%s"/><label for="bing">Bing</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="duckduckgo" value="https://duckduckgo.com/?q=%s"/><label for="duckduckgo">Duck Duck Go</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="google" value="https://www.google.com/search?q=%s" checked /><label for="google">Google</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="se" id="yahoo" value="https://search.yahoo.com/search?p=%s"><label for="yahoo"/>Yahoo</label>
+			</div>
+		</form>
+		<script src="popup.js"></script>
+	</body>
+</html>
